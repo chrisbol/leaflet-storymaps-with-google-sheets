@@ -76,7 +76,7 @@ $(window).on('load', function() {
       $('#map').css('width', mapWidth + 'vw');
     } */
 
-    var chapterContainerMargin = 20;
+    var chapterContainerMargin = 70;
 
     document.title = getSetting('_mapTitle');
     $('#title').append('<h3>' + getSetting('_mapTitle') + '</h3>');
@@ -207,7 +207,7 @@ $(window).on('load', function() {
     }
 
     // For each block (chapter), calculate how many pixels above it
-    pixelsAbove[0] = -100;
+    pixelsAbove[0] = -10;
     for (i = 1; i < chapters.length; i++) {
       pixelsAbove[i] = pixelsAbove[i-1] + $('div#container' + (i-1)).height() + chapterContainerMargin;
     }
