@@ -207,7 +207,7 @@ $(window).on('load', function() {
     }
 
     // For each block (chapter), calculate how many pixels above it
-    pixelsAbove[0] = 60;
+    pixelsAbove[0] = getSetting('_pixelsAboveChapter');
     for (i = 1; i < chapters.length; i++) {
       pixelsAbove[i] = pixelsAbove[i-1] + $('div#container' + (i-1)).height() + chapterContainerMargin;
     }
