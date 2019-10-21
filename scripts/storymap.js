@@ -76,7 +76,7 @@ $(window).on('load', function() {
       $('#map').css('width', mapWidth + 'vw');
     } */
 
-    var chapterContainerMargin = 70;
+    var chapterContainerMargin = 20;
 
     document.title = getSetting('_mapTitle');
     $('#title').append('<h3>' + getSetting('_mapTitle') + '</h3>');
