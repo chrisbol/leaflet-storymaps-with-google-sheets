@@ -292,9 +292,13 @@ $(window).on('load', function() {
     $("<style>")
       .prop("type", "text/css")
       .html("\
-      #narration, #title {\
+      #narration {\
         background-color: " + trySetting('_narrativeBackground', 'white') + "; \
         color: " + trySetting('_narrativeText', 'black') + "; \
+      }\
+      #title {\
+        background-color: " + trySetting('_narrativeBackground', 'white') + "; \
+        color: " + trySetting('_mapTextColor', 'black') + "; \
       }\
       a, a:visited, a:hover {\
         color: " + trySetting('_narrativeLink', 'blue') + " \
