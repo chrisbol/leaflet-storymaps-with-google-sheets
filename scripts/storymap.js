@@ -297,8 +297,8 @@ $(window).on('load', function() {
         color: " + trySetting('_narrativeText', 'black') + "; \
       }\
       #title {\
-        background-color: " + trySetting('_narrativeBackground', 'white') + "; \
-        color: " + trySetting('_mapTextColor', 'black') + "; \
+        background-color: " + trySetting('_narrativeActive', 'black') + "; \
+        color: " + trySetting('_narrativeText', 'white') + "; \
       }\
       a, a:visited, a:hover {\
         color: " + trySetting('_narrativeLink', 'blue') + " \
