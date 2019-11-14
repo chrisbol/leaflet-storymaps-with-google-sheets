@@ -79,8 +79,8 @@ $(window).on('load', function() {
     var chapterContainerMargin = 70;
 
     document.title = getSetting('_mapTitle');
-    $('#title').append('<font color="red"><h3>' + getSetting('_mapTitle') + '</h3>');
-    $('#title').append('<small>' + getSetting('_mapSubtitle') + '</small></font>');
+    $('#title').append('<h3>' + getSetting('_mapTitle') + '</h3>');
+    $('#title').append('<small>' + getSetting('_mapSubtitle') + '</small>');
 
     // Load tiles
     addBaseMap();
