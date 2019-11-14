@@ -5,6 +5,7 @@ var constants = {
 	// Storymapap Info
   _mapTitle: 'Storymap Title',
   _mapSubtitle: 'Storymap Subtitle',
+  _mapTextColor: 'Storymap Text Color',
   // Credits
 	_authorName: 'Author Name',
 	_authorURL: 'Author Email or Website',
