@@ -85,7 +85,7 @@ h3 {
 
 .img-container {
   margin: 0;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   height: 200px;
   max-height: 200px;
   width: 100%;
@@ -115,7 +115,7 @@ h3 {
   margin: 20px;
   text-align: left;
   font-size: 11pt;
-  padding: 20px;
+  padding: 0px;
 }
 
 .in-focus {
