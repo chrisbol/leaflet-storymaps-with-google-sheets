@@ -137,6 +137,7 @@ $(window).on('load', function() {
       var media = null;
       var mediaContainer = null;
 
+      
       // Add media source
       var source = $('<a>', {
         text: c['Media Credit'],
@@ -160,7 +161,8 @@ $(window).on('load', function() {
           class: 'img-container'
         }).append(media).after(source);
       }
-
+      
+      
       // If not YouTube: either audio or image
       var mediaTypes = {
         'jpg': 'img',
@@ -188,7 +190,7 @@ $(window).on('load', function() {
       container
         .append('<p class="chapter-header">' + c['Chapter'] + '</p>')
         .append(media ? mediaContainer : '')
-        .append(media ? source : '')
+//        .append(media ? source : '')
         .append('<p class="description">' + c['Description'] + '</p>');
 
       $('#contents').append(container);
