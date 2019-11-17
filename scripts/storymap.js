@@ -146,7 +146,7 @@ $(window).on('load', function() {
         class: 'source'
       });
 
-      /*
+      
       // YouTube
       if (c['Media Link'].indexOf('youtube.com/') > -1) {
         media = $('<iframe></iframe>', {
@@ -157,7 +157,7 @@ $(window).on('load', function() {
           allow: 'autoplay; encrypted-media',
           allowfullscreen: 'allowfullscreen',
         });
-*/
+
         mediaContainer = $('<div></div', {
           class: 'img-container'
         }).append(media).after(source);
@@ -191,7 +191,7 @@ $(window).on('load', function() {
       container
         .append('<p class="chapter-header">' + c['Chapter'] + '</p>')
         .append(media ? mediaContainer : '')
-//        .append(media ? source : '')
+        .append(media ? source : '')
         .append('<div class="description">' + c['Description'] + '</div>');
 
       $('#contents').append(container);
