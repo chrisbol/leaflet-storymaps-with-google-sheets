@@ -71,7 +71,6 @@ $(window).on('load', function() {
     narrativeWidth = parseInt(getSetting('_narrativeWidth'));
     if (narrativeWidth > 0 && narrativeWidth < 100) {
       var mapWidth = 100 - narrativeWidth;
-
       $('#narration, #title').css('width', narrativeWidth + 'vw');
       $('#map').css('width', mapWidth + 'vw');
     } */
@@ -137,7 +136,6 @@ $(window).on('load', function() {
       var media = null;
       var mediaContainer = null;
 
-      
       // Add media source
       var source = $('<a>', {
         text: c['Media Credit'],
@@ -146,7 +144,6 @@ $(window).on('load', function() {
         class: 'source'
       });
 
-      
       // YouTube
       if (c['Media Link'].indexOf('youtube.com/') > -1) {
         media = $('<iframe></iframe>', {
@@ -162,8 +159,7 @@ $(window).on('load', function() {
           class: 'img-container'
         }).append(media).after(source);
       }
-      
-      
+
       // If not YouTube: either audio or image
       var mediaTypes = {
         'jpg': 'img',
@@ -192,7 +188,7 @@ $(window).on('load', function() {
         .append('<p class="chapter-header">' + c['Chapter'] + '</p>')
         .append(media ? mediaContainer : '')
         .append(media ? source : '')
-        .append('<div class="description">' + c['Description'] + '</div>');
+        .append('<p class="description">' + c['Description'] + '</p>');
 
       $('#contents').append(container);
 
