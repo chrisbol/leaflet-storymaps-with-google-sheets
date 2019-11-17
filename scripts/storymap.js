@@ -184,10 +184,11 @@ $(window).on('load', function() {
         }).append(media).after(source);
       }
 
+      //        .append(media ? source : '')
+
       container
         .append('<p class="chapter-header">' + c['Chapter'] + '</p>')
         .append(media ? mediaContainer : '')
-        .append(media ? source : '')
         .append('<div class="description">' + c['Description'] + '</div>');
 
       $('#contents').append(container);
