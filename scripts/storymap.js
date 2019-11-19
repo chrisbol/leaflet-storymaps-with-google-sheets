@@ -189,7 +189,7 @@ $(window).on('load', function() {
       container
         .append('<p class="chapter-header">' + c['Chapter'] + '</p>')
         .append(media ? mediaContainer : '')
-        .append('<p class="description">' + c['Description'] + '</p>');
+        .append('<p class="description">' + c['Description'] + '</p><br><br>');
 
       $('#contents').append(container);
 
